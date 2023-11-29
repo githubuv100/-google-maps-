@@ -1,0 +1,100 @@
+! 
+<head>  
+ <meta charset="UTF-8">
+ <meta name="vierport" content="width=device-width,initial-scale=1.0">
+ <title>Dispositivos de E/S - geolocalizacion<title>
+    <link rel="stylesheet" href="hhtps://cdn.jsdelivr.net/npm/bootstr@p5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+ <!--Hoja de estilo local-->
+ <link rel="stylesheet" href="css/ubicacion.css">
+ <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ <script defer src="https://code.jquerry.com/jquerry-3.7.1.min.js"></script>
+ <script defer src="https//maps.googleapis.com/maps/api/js?key=AIzaSyDN3vjto_5CHpPTAIVpygowsC4sjptPESE&libraries=places&callback=console.debug"></script>
+ <script defer src="js/locationpicker.js"></script>
+ <script defer src="js/ubicacion.js"></script>
+</head>
+
+<body>
+      <a href="https://www.uv.mx">
+        class="text-bg-success position-absolute top-0 end-0 btn-link btn-sm px-3 py-0 rounded-0 text-decoration-none"
+        title="abrir el sitio web de la  universidad  veracruzana ">universidad veracruzana</a>
+      </body>
+
+<div class="container">
+    <main role="main" class="pb-3">
+            <h2 class="text-center mb-4">seleccion ubicacion</h2>
+            <div class="row">
+            <div class="col-sm-6">
+                <form>
+            <div class="card mt-3">
+                <div class="card-header">
+            <div class="card-body contenedor mapa">
+                            <div class="mb-3">
+                                <label class="form label" for="localizator">localizacion(busqueda google maps):</label>
+                                <input class="form-control" type="text" id="localizador" name="localizador"
+                                value="">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="latitud"></label>
+                                <input class="form-control" type="number" id="latitud" name="latitud" value="0">
+                            </div>
+                            <div class="mb3">
+                            <label class="form-label" for="longitud"></label>
+                            <input class="form-control" type="number" id="longitud" name="longitud" value="0">
+                                </div>
+                                <div class="mb3">
+                        <label class="form label" for="distancia">Distancia entre tu ubicacion y el destino:</label>
+                        <input readondly class="form-control-plaintext fw-bold" type="text" id="distancia" name="distancia">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="transporte"></label>
+                                    <select class="form-select" id="transporte" name="transporte">
+                                        <option value="driving">automovil</option>
+                                        <option value="walking">caminando</option>
+                                        <option value="BICYCLING">Bicicleta</option>
+                                    </select>
+                                </div>
+                                <div class="mb3">
+                                    <div class="form-check">
+                                        <label class="form-label" for="ruta">mostrar la ruta</label>
+                                        <label class="form-check-input" type="checkbox" checked="checked" id="ruta" name="ruta" value="true">
+
+                                        </div>
+                                </div>
+                                </div>
+            <div class="card-footer text-center">
+                                ingrese el nombre de la ubicacion o las coordenadas para verlo en el mapa
+            </div>
+             </div>
+                </form>
+            </div>
+            <div class="col-sm-6">
+            <div class="card mt-3">
+            <div class="card-header">
+                 mapa
+            </div>
+            <div class="card-body contenedor-mapa">
+                <div id="mapa class=h-100"></div>
+            </div>
+            <div class="card-footer text-center">
+                seleccione un lugar moviendo el marcador rojo a una ubicacion
+            </div>
+            </div>
+            </div>
+            </div>
+    </main>
+</div>
+
+<footer class="border-top text-muted py-2">
+    <div class="container">
+        %copy; 2023 - universidad veracruzana
+    </div>
+</footer>
+
+
+    
+
+                    
+
+
+
